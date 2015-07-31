@@ -7,10 +7,12 @@ Example:
 
 range(10):  
 |> map(lambda x: x*x, $)  
+|> sum($)  
 |> print str($)
 
 which is the same as the standard python:
 
 tmp = range(10)  
 tmp2 = map(lambda x: x*x, tmp)  
-print str(tmp2)
+tmp3 = sum(tmp2)
+print str(tmp3)
