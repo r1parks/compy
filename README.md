@@ -5,7 +5,7 @@ Allows infix-style function calling, making python's native functional tools muc
 
 Example:
 
-range(10):  
+range(10)  
 |> map(lambda x: x*x, $)  
 |> sum($)  
 |> print str($)
